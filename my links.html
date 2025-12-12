@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pukar Bhujel - Portfolio</title>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+
+    <!-- DARK/LIGHT MODE TOGGLE -->
+    <button id="themeToggle">
+        <i class="fa-solid fa-moon"></i>
+    </button>
+
+    <div class="container">
+
+        <!-- LEFT PHOTO -->
+        <div class="left">
+            <img src="C:\Users\Administrator\Desktop\insta.html\profile.jpg.JPG" alt="Pukar Photo" class="float glow-border">
+        </div>
+
+        <!-- RIGHT SIDE CONTENT -->
+        <div class="right">
+            <h1 class="typing">Hi, I'm <span>Pukar Bhujel</span></h1>
+
+            <p class="intro-text">
+                Hi, I'm Pukar Bhujel. I enjoy learning new things,
+                exploring ideas and connecting with people online.
+                Feel free to reach me through any of my social platforms!
+            </p>
+
+            <!-- VERTICAL SOCIAL BUTTONS -->
+            <div class="vertical-icons">
+
+                <a href="https://www.tiktok.com/@pukarbhujel322" class="icon-btn glow">
+                    <i class="fa-brands fa-tiktok"></i> TikTok
+                </a>
+
+                <a href="https://www.instagram.com/offx.pukar/" class="icon-btn glow">
+                    <i class="fa-brands fa-instagram"></i> Instagram
+                </a>
+
+                <a href="https://www.facebook.com/pukar.bhujel.516523" class="icon-btn glow">
+                    <i class="fa-brands fa-facebook"></i> Facebook
+                </a>
+
+                <a href="https://wa.me/9779767217070" class="icon-btn glow">
+                    <i class="fa-brands fa-whatsapp"></i> WhatsApp
+                </a>
+
+                <a href="mailto:pukarbhujel14@gmail.com" class="icon-btn glow">
+                    <i class="fa-solid fa-envelope"></i> Email Me
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+<script>
+    // DARK / LIGHT MODE TOGGLE
+    const toggle = document.getElementById('themeToggle');
+    const body = document.body;
+
+    toggle.onclick = () => {
+        body.classList.toggle("dark");
+        body.classList.toggle("light");
+        toggle.innerHTML = body.classList.contains("dark") 
+            ? '<i class="fa-solid fa-sun"></i>'
+            : '<i class="fa-solid fa-moon"></i>';
+    };
+</script>
+
+</body>
+</html>
+
